@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Félix — Espace de travail</title>
+<style>
+  :root{
+    --bg:#f4f5f7; --card:#ffffff; --text:#18202a; --muted:#68717d;
+    --accent:#183b56; --accent2:#2d617f; --line:#e3e7eb;
+    --shadow:0 10px 30px rgba(24,32,42,.07);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    color:var(--text); background:linear-gradient(135deg,#f7f8fa 0%,#eef2f5 100%);
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:52px 28px 70px}
+  header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:38px}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);font-weight:700}
+  h1{font-size:42px;line-height:1.05;margin:8px 0 8px;letter-spacing:-.03em}
+  .subtitle{margin:0;color:var(--muted);font-size:16px}
+  .date{color:var(--muted);font-size:14px;text-align:right}
+  section{margin:30px 0}
+  .section-title{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:18px}
+  .section-title span{font-size:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+  a.card{
+    display:block;text-decoration:none;color:inherit;background:var(--card);
+    border:1px solid var(--line);border-radius:16px;padding:19px 18px;
+    box-shadow:var(--shadow);transition:.18s ease;min-height:105px;
+  }
+  a.card:hover{transform:translateY(-3px);border-color:#cbd6df;box-shadow:0 15px 35px rgba(24,32,42,.11)}
+  .icon{font-size:25px;margin-bottom:11px}
+  .name{font-weight:700;font-size:15px;margin-bottom:5px}
+  .desc{font-size:12px;color:var(--muted);line-height:1.4}
+  footer{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+  @media(max-width:650px){.wrap{padding:32px 18px 50px}header{display:block}.date{text-align:left;margin-top:15px}h1{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <div class="eyebrow">Espace professionnel</div>
+    <h1>Bonjour Félix 👋</h1>
+    <p class="subtitle">Ton tableau de bord immobilier — tous tes outils au même endroit.</p>
+  </div>
+  <div class="date" id="date"></div>
+</header>
+
+<section>
+  <h2 class="section-title"><span>🏢</span> Agence & communication</h2>
+  <div class="grid">
+    <a class="card" href="https://www.vivreici.fr/" target="_blank"><div class="icon">🏠</div><div class="name">Vivre ICI</div><div class="desc">Site du réseau immobilier</div></a>
+    <a class="card" href="https://mail.google.com/" target="_blank"><div class="icon">✉️</div><div class="name">Messagerie</div><div class="desc">Accéder à ta messagerie</div></a>
+    <a class="card" href="https://calendar.google.com/" target="_blank"><div class="icon">📅</div><div class="name">Agenda</div><div class="desc">Rendez-vous et planning</div></a>
+    <a class="card" href="https://drive.google.com/" target="_blank"><div class="icon">📁</div><div class="name">Google Drive</div><div class="desc">Documents et dossiers</div></a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title"><span>🏡</span> Transaction immobilière</h2>
+  <div class="grid">
+    <a class="card" href="https://la-loupe.immo/" target="_blank"><div class="icon">🔎</div><div class="name">La Loupe Immo</div><div class="desc">Analyse et données immobilières</div></a>
+    <a class="card" href="https://www.seloger.com/" target="_blank"><div class="icon">🏘️</div><div class="name">SeLoger</div><div class="desc">Portail immobilier</div></a>
+    <a class="card" href="https://www.bienici.com/" target="_blank"><div class="icon">📍</div><div class="name">Bien'ici</div><div class="desc">Annonces et recherche immobilière</div></a>
+    <a class="card" href="https://www.leboncoin.fr/" target="_blank"><div class="icon">🟠</div><div class="name">Leboncoin</div><div class="desc">Annonces immobilières</div></a>
+    <a class="card" href="https://app.dvf.etalab.gouv.fr/" target="_blank"><div class="icon">📊</div><div class="name">DVF</div><div class="desc">Demandes de valeurs foncières</div></a>
+    <a class="card" href="https://www.georisques.gouv.fr/" target="_blank"><div class="icon">⚠️</div><div class="name">Géorisques</div><div class="desc">Risques liés aux biens</div></a>
+    <a class="card" href="https://www.cadastre.gouv.fr/" target="_blank"><div class="icon">🗺️</div><div class="name">Cadastre</div><div class="desc">Parcelles et références cadastrales</div></a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title"><span>📞</span> Prospection</h2>
+  <div class="grid">
+    <a class="card" href="https://www.google.com/maps/" target="_blank"><div class="icon">📍</div><div class="name">Google Maps</div><div class="desc">Recherche d'adresses et secteurs</div></a>
+    <a class="card" href="https://www.pagesjaunes.fr/" target="_blank"><div class="icon">📒</div><div class="name">PagesJaunes</div><div class="desc">Recherche de professionnels</div></a>
+    <a class="card" href="https://www.google.com/" target="_blank"><div class="icon">🔍</div><div class="name">Google</div><div class="desc">Recherche rapide</div></a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title"><span>🧰</span> Outils de travail</h2>
+  <div class="grid">
+    <a class="card" href="https://chatgpt.com/" target="_blank"><div class="icon">🤖</div><div class="name">ChatGPT</div><div class="desc">Rédaction, réflexion et aide au quotidien</div></a>
+    <a class="card" href="https://www.canva.com/" target="_blank"><div class="icon">🎨</div><div class="name">Canva</div><div class="desc">Création de supports visuels</div></a>
+    <a class="card" href="https://www.notion.so/" target="_blank"><div class="icon">📝</div><div class="name">Notion</div><div class="desc">Notes, organisation et suivi</div></a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title"><span>📚</span> Ressources utiles</h2>
+  <div class="grid">
+    <a class="card" href="https://www.service-public.fr/" target="_blank"><div class="icon">🇫🇷</div><div class="name">Service-Public.fr</div><div class="desc">Informations administratives</div></a>
+    <a class="card" href="https://www.anil.org/" target="_blank"><div class="icon">⚖️</div><div class="name">ANIL</div><div class="desc">Information logement et immobilier</div></a>
+    <a class="card" href="https://www.legifrance.gouv.fr/" target="_blank"><div class="icon">📜</div><div class="name">Légifrance</div><div class="desc">Textes et réglementation</div></a>
+  </div>
+</section>
+
+<footer>
+  Astuce : les mots de passe ne sont pas stockés dans cette page. Utilise le gestionnaire de mots de passe de Safari/Apple pour conserver tes accès en sécurité.
+</footer>
+</div>
+<script>
+const d = new Date();
+document.getElementById("date").textContent =
+  d.toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+</script>
+</body>
+</html>
